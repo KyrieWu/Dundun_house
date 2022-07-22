@@ -1,0 +1,58 @@
+[
+  {
+    "categoryId": "001",
+    "categoryName": "图书、音像、数字商品",
+    "categoryChild": [
+      {
+        "categoryId": "001-1",
+        "categoryName": "电子书",
+        "categoryChild": [
+          {
+            "categoryId": "001-1-1",
+            "categoryName": "婚恋/两性"
+          },
+          {
+            "categoryId": "001-1-2",
+            "categoryName": "文学"
+          },
+          {
+            "categoryId": "001-1-3",
+            "categoryName": "经管"
+          },
+          {
+            "categoryId": "001-1-4",
+            "categoryName": "财经"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "002",
+    "categoryName": "电子产品",
+    "categoryChild": [
+      {
+        "categoryId": "002-1",
+        "categoryName": "平板电脑",
+        "categoryChild": [
+          {
+            "categoryId": "002-1-1",
+            "categoryName": "拯救者平板"
+          },
+          {
+            "categoryId": "002-1-2",
+            "categoryName": "iPad"
+          },
+          {
+            "categoryId": "002-1-3",
+            "categoryName": "小米平板"
+          },
+          {
+            "categoryId": "002-1-4",
+            "categoryName": "华为平板"
+          }
+        ]
+      }
+    ]
+  }
+]
