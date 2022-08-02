@@ -116,7 +116,7 @@
                 >
               </div>
               <div class="add">
-                <a href="javascript:">加入购物车</a>
+                <a @click="addShopCar">加入购物车</a>
               </div>
             </div>
           </div>
@@ -342,7 +342,7 @@
 import ImageList from "@/pages/Detail/ImageList/ImageList";
 import Zoom from "@/pages/Detail/Zoom/Zoom";
 import { useStore } from "vuex";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { computed, ref } from "@vue/runtime-core";
 import _ from "lodash";
 export default {
@@ -352,6 +352,7 @@ export default {
     let skuNum = ref(1);
     let $store = useStore();
     let $route = useRoute();
+    let $router = useRouter();
     let { getters } = useStore();
     $store.dispatch("getGoodInfo", $route.params.skuId);
 
@@ -377,6 +378,14 @@ export default {
       }
     };
 
+    let addShopCar = function () {
+      sessionStorage.setItem("SKUINFO", JSON.stringify(skuInfo.value));
+      $router.push({
+        name: "addcartsuccess",
+        query: { skuNum: this.skuNum },
+      });
+    };
+
     return {
       goodInfos,
       categoryView,
@@ -386,6 +395,7 @@ export default {
       changeSkuNum,
       skuNum,
       skuImageList,
+      addShopCar,
     };
   },
 };

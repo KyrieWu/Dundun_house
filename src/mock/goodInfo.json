@@ -110,7 +110,7 @@
       "weight": "0.47",
       "tmId": 1,
       "category3Id": 61,
-      "skuDefaultImg": "http://192.168.200.128:8080/xxxx.jpg",
+      "skuDefaultImg": "/images/s1.png",
       "isSale": 1,
       "skuImageList": [
         {

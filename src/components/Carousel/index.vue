@@ -41,28 +41,6 @@ export default {
       { immediate: true }
     );
   },
-  // old Function
-  // watch: {
-  //   list: {
-  //     //立即监听
-  //     immediate: true,
-  //     handler() {
-  //       this.$nextTick(() => {
-  //         new Swiper(this.$refs.cur, {
-  //           loop: true,
-  //           pagination: {
-  //             el: ".swiper-pagination",
-  //             clickable: true,
-  //           },
-  //           navigation: {
-  //             nextEl: ".swiper-button-next",
-  //             prevEl: ".swiper-button-prev",
-  //           },
-  //         });
-  //       });
-  //     },
-  //   },
-  // },
 };
 </script>
 
